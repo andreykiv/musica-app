@@ -67,26 +67,6 @@ yargs.command({
 })
 
 yargs.command({
-    command: 'cmd',
-    describe: 'txt',
-    builder: {
-        option: {
-            describe: 'txt',
-            demandOption: true,
-            type: 'string'
-        },
-        option: {
-            describe: 'example',
-            demandOption: true,
-            type: 'string'
-        }
-    },
-    handler(argv) {
-        notes.addNote(argv.option, argv.option)
-    }
-})
-
-yargs.command({
     command: 'sort',
     describe: 'ordenar canciones',
     builder: {
